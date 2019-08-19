@@ -1,4 +1,114 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+  color: #222;
 }
 
+#banner {
+  padding-top: 30px;
+  background-color: #172252;
+  color: white;
+}
+
+#banner a {
+  color: white;
+  text-decoration: none;
+}
+
+#banner a:hover {
+  color: rgb(236, 185, 55);
+  /* color: crimson; */
+}
+#banner a.active {
+  color: rgb(236, 185, 55);
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+
+}
+
+nav li {
+  font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media (min-width: 768px) {
+  nav li {
+    padding: 0px 20px 0 0;
+  }
+  nav li+li:before {
+    content: "|";
+    padding-right: 20px;
+  }
+}
+
+#main {
+  max-width: 850px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(236, 185, 55);
+}
+
+.card {
+  margin-top: 25px;
+}
+
+#footer {
+  position: fixed;
+  padding: 10px 20px;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: solid 5px #172252;
+  border-bottom: solid 5px #172252;
+  color: grey;
+}
+#footer a {
+  display: inline;
+  color: grey;
+}
+#footer a:hover {
+  text-decoration: none;
+  color: #172252;
+}
+.socialBanner {
+  float: right;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.na-logo::before {
+
+}
+
+@media (max-width: 767px) {
+
+  #banner {
+    padding-top: 25px;
+    background-color: white;
+    color: #172252;
+    border: solid 5px #172252;
+  }
+  #banner a {
+    color: #172252;
+  }
+  .title {
+    font-size: 38px;
+  }
+}

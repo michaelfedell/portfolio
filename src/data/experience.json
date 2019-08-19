@@ -1,0 +1,57 @@
+{
+  "jpl-intern": {
+    "company": "NASA Jet Propulsion Laboratory",
+    "location": "Pasadena, CA",
+    "title": "Data Science Intern",
+    "start-date": "2019-06-27",
+    "end-date": "2019-09-13",
+    "image": "/images/jobs/nasa-jpl.jpg",
+    "short": "Developed machine learning pipelines and software solutions for various data science projects focusing on anomaly detection in IoT data streams. Optimized solutions to reduce experimentation time by about 60% and deployed system to monitor live experiments and track results.",
+    "long": "",
+    "link": ""
+  },
+  "oseberg": {
+    "company": "Oseberg",
+    "location": "Oklahoma City, OK",
+    "title": "Data Analytics Intern",
+    "start-date": "2018-06-01",
+    "end-date": "2018-09-01",
+    "image": "/images/jobs/oseberg.jpg",
+    "short": "Modeled customer churn with commercial tools like MixPanel and Kibana as well as custom-built solutions in Python and R. Also led data engineering effort to build parsers for new data provider.",
+    "long": "I spent my last summer before grad school interning with a fascinating data analytics and SaaS company in Oklahoma City called Oseberg. Named after the famous Viking ship that earned renown as a daring explorer pioneering rough waters, the company charted its course to revolutionize the way the oil & gas industry brought data and technology to bear. I worked as a data analyst intern, investigating client usage data, finding key application features, and highlighting client behavior indicative of churn. This work stream provided valuable insights for the client success managers, sales team, and product managers by guiding client orientations and trainings, pitches and demos, and development roadmaps. As one of the few team members proficient in Python, I also helped lead a data engineering project to onboard a new data vendor. This project aimed to develop a suite of scripts that would extract information from index files and produce records in a standardized format for downstream ingestion. To facilitate this, I wrote and packaged and published several libraries around common utilities and output validation to speed up the team’s development cycle. I had a lot of fun on this project, crafting code that was flexible enough for varied use cases across the infinitely unpredictable input formats submitted by various counties. Through the tricky problems and constant code reviews, I sharpened my Python skills a lot by working on this project. I also made considerable improvements to my “git-foo” and comfort with project management.",
+    "link": ""
+  },
+  "cp-chem": {
+    "company": "Chevron Phillips Chemical",
+    "location": "Bartlesville, OK",
+    "title": "Research Engineer Intern",
+    "start-date": "2017-05-20",
+    "end-date": "2017-08-15",
+    "image": "/images/jobs/cp-chem.jpg",
+    "short": "Evaluated technical plans, proposed various improvement projects, and coordinated work between engineers, operators, and subject matter experts to improve operational efficiency around the Polyethylene pilot plant.",
+    "long": "The sleepy town of Bartlesville, Oklahoma became my home for the summer of 2017 where I worked as a research engineering intern at the brand new Polyethylene pilot plant on Chevron Phillips Chemical Company’s research and technology campus. In this role I got to apply the full suite of my chemical engineering skills, sizing pressure relief systems, troubleshooting heat exchangers and distillation columns, and revising piping and instrumentation diagrams on an almost daily basis. With the high stakes and numerous safety concerns inherent to chemical processes, this job taught me to work in a very deliberate and careful manner, paying close attention to every detail and constraint. Working so closely to the process, I learned a lot about reaction kinetics, catalysis, process dynamics, and process safety management. But I also took a lot from this experience on the non-technical side of things. I was working with a very diverse collection of professionals ranging from experienced operators to advanced chemists to safety experts and top-brass project managers. This afforded me ample opportunity to develop my communication skills and practice delivering technical explanations, project overviews, and news both good and bad to a wide range of audiences with various levels of technical expertise. Additionally, through writing scope of projects, coordinating meetings among interested parties, and learning to work within tight logistical and financial constraints, I learned much about project management.",
+    "link": ""
+  },
+  "iccew": {
+    "company": "Irani Center for Creation of Economic Wealth\n",
+    "location": "Norman, OK",
+    "title": "Web Developer - Software Business Accelerator",
+    "start-date": "2018-01-15",
+    "end-date": "2018-05-15",
+    "image": "/images/jobs/iccew.jpg",
+    "short": "Developed and deployed a full-stack web application for a large manufacturing company. Worked through various design iterations and presented findings and prototypes to the client, eventually arriving at a full-service e-commerce application.",
+    "long": "The Irani Center for Creation of Economic Wealth is in my opinion, one of the best programs that the University of Oklahoma sponsors. Created with the vision of promoting and supporting entrepreneurship and innovation in the state of Oklahoma by leveraging the advanced research conducted by university professors, the zeal and ambition of high achieving students, and the unique mix of creative ideas in Oklahoma’s entrepreneurial space. The program operates as a mini-consulting firm, pairing multidisciplinary teams of students with promising research projects and fast-growth companies for semester-long engagements. I interned with I-CCEW as part of the Software Business Accelerator Team, tasked with bringing companies both young and old forward into the digital world through custom software solutions, mobile applications, or website overhauls. I worked with three other developers to design and build an e-commerce platform for one of the nation’s leading manufacturers of industrial filter systems. Our team worked closely with four business analysts and a graphic designer to tailor the platform to the specific needs and market opportunities facing the company. This experience taught me the importance of multidisciplinary collaboration, careful and deliberate research, and close and through communication in the context of consulting engagements. For more details on the contributions I made during this engagement, head over to my projects page.",
+    "link": ""
+  },
+  "gcoe-tutor": {
+    "company": "Gallogly College of Engineering\n",
+    "location": "Norman, OK",
+    "title": "Chevron Phillips Scholar Mentor\n",
+    "start-date": "2016-08-27",
+    "end-date": "2017-05-15",
+    "image": "/images/jobs/gcoe.jpg",
+    "short": "Mentored and tutored sophomore chemical engineering students and worked with professors to administer classes and plan workshops.",
+    "long": "Though the least technical, this particular experience has been one of my most enjoyed. It’s no secret that chemical engineering is a highly demanding discipline. In fact, the major is home to one of the highest attrition rates across programs, and many students don’t make it further than sophomore year. To combat this, the Univeristy of Oklahoma hosts a program in which junior and senior students actively mentor and tutor students in their sophomore year of chemical engineering (when the first ChE courses are introduced). Inspired by the support and assistance I was given by those who came before me, I joined the program as a Scholar-Mentor during my junior year. In this role I worked very closely with both the professors in the department as well as the distraught students. I acted as a liaison of sorts, ensuring that the professors knew where students were struggling and what type of assignments were effective while also helping to reinforce and demonstrate important concepts from the course to the students who needed it. Our team of mentors was able to encourage and help a lot of students succeed throughout the year and it was incredibly rewarding to help younger students cross the threshold from distraught sophomore to confident junior. Many of the students I mentored went on to become mentors themselves and the program continues to provide impactful support and encouragement to so many aspiring engineers.",
+    "link": ""
+  }
+}

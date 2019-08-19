@@ -1,0 +1,54 @@
+
+.bio {
+  text-align: justify;
+  font-size: 1.25em;
+  margin-top: 25px;
+}
+
+#social-lg {
+  margin-top: 50px;
+  font-size: 75px;
+}
+
+#social-lg a {
+  color: #172252;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
+
+
+#social-lg a:hover {
+  text-decoration: none;
+  color: rgb(236, 185, 55);
+}
+
+.label {
+  font-size: 14px;
+  -webkit-transition: color 0.75s;
+  -moz-transition:    color 0.75s;
+  -ms-transition:     color 0.75s;
+  -o-transition:      color 0.75s;
+  transition:         color 0.75s;
+  color: transparent;
+  visibility: hidden;
+}
+#social-lg:hover~.label {
+  visibility: visible;
+  color: #172252
+}
+
+#quote {
+  font-size: 0.85em;
+  margin-top: 50px;
+  padding-left: 10px;
+  border-left: 10px solid rgba(0,0,0,0.1);
+}
+
+#quote span {
+  line-height: 2em;
+  margin-left: 25px;
+}
