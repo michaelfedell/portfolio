@@ -1,87 +1,15 @@
 {
-  "healthModel": {
-    "title": "User Health Model",
-    "image": "/images/projects/user.jpg",
-    "desc": "Sourced clickstream data and account information to build out user profiles for a SaaS company to monitor customer activity. Used these profiles to analyze and predict churn across the customer base and to inform CRM specialists on how to structure workshops, reach out to users, and prioritize visits.",
-    "button": "Read More",
-    "link": "",
-    "button2": "",
-    "link2": "",
-    "when": "Summer 2018",
-    "type": "work",
-    "keywords": []
-  },
-  "rms": {
-    "title": "Roster Management System",
-    "image": "/images/projects/rms.jpg",
-    "desc": "Built a robust web application for roster management among student organizations. Users can be granted various privileges to manage rosters, update member information, and process updates in bulk via file upload. Note: this application was commissioned as contract work, but went unfinished due to loss of funding.",
+  "coffeeNet": {
+    "title": "CoffeeNet",
+    "image": "/images/projects/coffee.jpg",
+    "desc": "What started as a toy project evolved into a really great demonstration of the full suite of topics in data science. CoffeeNet takes images and sensor data off a raspberry pi to monitor and predict a coffee pot’s state and provide analytics and predictions to the office via a slick front-end application. Credit to Mark Hoffman and Valentino Constantinous for laying most of the groundwork for this project.",
     "button": "Repo",
     "link": "",
     "button2": "",
     "link2": "",
-    "when": "Summer 2018",
+    "when": "Summer 2019",
     "type": "side",
-    "keywords": []
-  },
-  "filtra": {
-    "title": "E-Commerce from Scratch",
-    "image": "/images/projects/filtra.jpg",
-    "desc": "Developed an e-commerce solution for a large filter manufacturer. This was my first exposure to web development and allowed me to learn to work with tools like MongoDB, Angular, Express, Node.js, and Stripe. I mainly worked on the backend for this application, but also built out the frontend for carts and the checkout process.",
-    "button": "Code",
-    "link": "",
-    "button2": "Demo",
-    "link2": "",
-    "when": "Spring 2018",
-    "type": "work",
-    "keywords": []
-  },
-  "sim-u": {
-    "title": "Sim-University",
-    "image": "/images/projects/simu.jpg",
-    "desc": "As part of my first Hackathon, I helped build out a Zoo-Tycoon-style game that gave the player the keys to a university which they would manage and develop. This was my first exposure to Python and I have to thank Daniel Schon for providing the idea and a lot of the code during this project and for helping bring me along.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Demo",
-    "link2": "",
-    "when": "Spring 2018",
-    "type": "hackathon",
-    "keywords": []
-  },
-  "studyIt": {
-    "title": "StudyIt Mobile App",
-    "image": "/images/projects/study.jpg",
-    "desc": "To prepare for an internship opportunity, I dreamed up this side project (my first independent programming project). This React Native mobile app allowed a user to easily upload a spreadsheet of questions and answers and then quiz themselves over the material from their phone.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Demo",
-    "link2": "",
-    "when": "Fall 2017",
-    "type": "side",
-    "keywords": []
-  },
-  "crawlMapper": {
-    "title": "Crawl Mapper",
-    "image": "/images/projects/user.jpg",
-    "desc": "As part of a CS course in my undergrad, this project took data from sensors on crawling babies and turned the points into a dashboard that visualized the baby moving through space. The entire project is implemented in Java with a focus on structures and abstractions.",
-    "button": "Repo",
-    "link": "",
-    "button2": "",
-    "link2": "",
-    "when": "Spring 2017",
-    "type": "academic",
-    "keywords": []
-  },
-  "bookstore": {
-    "title": "Bookstore Offer Analysis",
-    "image": "/images/projects/books.jpg",
-    "desc": "A deep analysis of sales and advertising data from a German bookstore allowed for predictive modeling of customer behavior in response to future promotions. This analysis was performed with an ensemble of models produced in R to optimize short and long-term profit fo the bookstore.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Report",
-    "link2": "",
-    "when": "Fall 2018",
-    "type": "academic",
-    "keywords": []
+    "order": 22
   },
   "portfolio": {
     "title": "Portfolio Site",
@@ -93,43 +21,7 @@
     "link2": "",
     "when": "Long-Running",
     "type": "side",
-    "keywords": []
-  },
-  "energyVis": {
-    "title": "Global Energy Visualizations",
-    "image": "/images/projects/energy.jpg",
-    "desc": "An experiment in visualization and data-driven storytelling, this project attempts to capture public interest around the use of energy across the world over the years. The site has been designed as an interactive experience that draws the user in with a compelling story, and then invites people to explore on their own with engaging visualization tools.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Demo",
-    "link2": "",
-    "when": "Winter 2018-19",
-    "type": "academic",
-    "keywords": []
-  },
-  "venmo": {
-    "title": "Venmo Network Analysis",
-    "image": "/images/projects/venmo.jpg",
-    "desc": "To gain familiarity with big data tools like spark, HBase, Hive, MapReduce, and others, I tackled this and other projects with fellow MSiA students. This project in particular uses some social network analysis and graph theory concepts to analyze Venmo transaction data.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Insights",
-    "link2": "",
-    "when": "Spring 2019",
-    "type": "academic",
-    "keywords": []
-  },
-  "albumAI": {
-    "title": "Album AI",
-    "image": "/images/projects/albumai.jpg",
-    "desc": "Can artificial intelligence decipher abstract album art to determine the likely genre of an album? This project attempts to answer that question with cutting edge deep learning techniques in computer vision. To accompany the project, I built out an application to serve the predictions and gather human input against which our models were benchmarked.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Demo",
-    "link2": "",
-    "when": "Spring 2019",
-    "type": "academic",
-    "keywords": []
+    "order": 21
   },
   "jc2": {
     "title": "Gaming Analytics Research",
@@ -141,7 +33,19 @@
     "link2": "",
     "when": "Spring 2019",
     "type": "academic",
-    "keywords": []
+    "order": 20
+  },
+  "albumAI": {
+    "title": "Album AI",
+    "image": "/images/projects/albumai.jpg",
+    "desc": "Can artificial intelligence decipher abstract album art to determine the likely genre of an album? This project attempts to answer that question with cutting edge deep learning techniques in computer vision. To accompany the project, I built out an application to serve the predictions and gather human input against which our models were benchmarked.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Demo",
+    "link2": "",
+    "when": "Spring 2019",
+    "type": "academic",
+    "order": 19
   },
   "instacart": {
     "title": "Instacart Profiler",
@@ -153,79 +57,19 @@
     "link2": "",
     "when": "Spring 2019",
     "type": "academic",
-    "keywords": []
+    "order": 18
   },
-  "skills": {
-    "title": "Skills Based Demand",
-    "image": "/images/projects/skills.jpg",
-    "desc": "During one of my first projects in analytics I worked with several other students and Greenwich HR to quantify and forecast demand for jobs in the IT space based on associated skills. We ended up developing some novel approaches to measuring job demand and packaged all this in a slick user application to encourage exploration. Big thanks to classmate JD Cook for getting most of the dashboard put together.",
-    "button": "Repo",
-    "link": "",
-    "button2": "Blog",
-    "link2": "",
-    "when": "Fall 2018",
-    "type": "academic",
-    "keywords": []
-  },
-  "bpForecast": {
-    "title": "BP Forecasting Tools",
-    "image": "/images/projects/bp.jpg",
-    "desc": "My team and I built out forecasting tools and predictive models in an enterprise cloud environment (Palantir) using PySpark to drive big data analytics. Our tools enabled the operations teams at BP to understand index price trends, forecast risk, and predict bid outcomes based on market conditions and contract structure.",
-    "button": "Read More",
-    "link": "",
-    "button2": "",
-    "link2": "",
-    "when": "Spring 2019",
-    "type": "academic",
-    "keywords": []
-  },
-  "coffeeNet": {
-    "title": "CoffeeNet",
-    "image": "/images/projects/coffee.jpg",
-    "desc": "What started as a toy project evolved into a really great demonstration of the full suite of topics in data science. CoffeeNet takes images and sensor data off a raspberry pi to monitor and predict a coffee pot’s state and provide analytics and predictions to the office via a slick front-end application. Credit to Mark Hoffman and Valentino Constantinous for laying most of the groundwork for this project.",
-    "button": "Repo",
-    "link": "",
-    "button2": "",
-    "link2": "",
-    "when": "Summer 2019",
-    "type": "side",
-    "keywords": []
-  },
-  "dsTools": {
-    "title": "Data Science Toolbox",
-    "image": "/images/projects/tools.jpg",
-    "desc": "This was conceived as a one-stop-shop for examples, references, and notes for future data science projects. The repository includes many snippets from past projects, toy examples borrowed from various tutorials, and some of my condensed notes from grad school.",
-    "button": "Repo",
-    "link": "",
-    "button2": "",
-    "link2": "",
-    "when": "Long-Running",
-    "type": "side",
-    "keywords": []
-  },
-  "campsite": {
-    "title": "Campsite Finder",
-    "image": "/images/projects/campsite.jpg",
-    "desc": "Through a Hackathon at DePaul university, I worked with a couple strangers to help build an application that would connect users to available camping sites across the US. I setup most of the backend infrastructure and logic and built in a social component that allows users to save favorite campsites, share suggestions with others, and comment on their experiences.",
-    "button": "Repo",
-    "link": "",
-    "button2": "",
-    "link2": "",
-    "when": "Fall 2018",
-    "type": "hackathon",
-    "keywords": []
-  },
-  "bcg": {
-    "title": "BCG Hackathon",
-    "image": "/images/projects/bcg.jpg",
-    "desc": "Another student and I analyzed some rich data on energy usage among a Spanish power company’s customer base. We built predictive models to forecast customer behavior and guide business decisions such as promotional offerings, customer segmentation, and variable pricing.",
+  "enova": {
+    "title": "Enova Data Smackdown",
+    "image": "/images/projects/enova.jpg",
+    "desc": "This exciting hackathon posed an interesting scenario in which were the head of a house-flipping group with a set amount of money to spend on acquisition and renovation. Using a wealth of real estate data, we were able to find the most lucrative investment opportunities and optimize our group’s profit.",
     "button": "Report",
     "link": "",
     "button2": "",
     "link2": "",
-    "when": "Winter 2018-19",
+    "when": "Spring 2019",
     "type": "hackathon",
-    "keywords": []
+    "order": 17
   },
   "abc": {
     "title": "ABC Hackathon",
@@ -237,19 +81,43 @@
     "link2": "",
     "when": "Spring 2019",
     "type": "hackathon",
-    "keywords": []
+    "order": 16
   },
-  "enova": {
-    "title": "Enova Data Smackdown",
-    "image": "/images/projects/enova.jpg",
-    "desc": "This exciting hackathon posed an interesting scenario in which were the head of a house-flipping group with a set amount of money to spend on acquisition and renovation. Using a wealth of real estate data, we were able to find the most lucrative investment opportunities and optimize our group’s profit.",
-    "button": "Report",
+  "bpForecast": {
+    "title": "BP Forecasting Tools",
+    "image": "/images/projects/bp.jpg",
+    "desc": "My team and I built out forecasting tools and predictive models in an enterprise cloud environment (Palantir) using PySpark to drive big data analytics. Our tools enabled the operations teams at BP to understand index price trends, forecast risk, and predict bid outcomes based on market conditions and contract structure.",
+    "button": "Read More",
     "link": "",
     "button2": "",
     "link2": "",
-    "when": "Spring 2018",
-    "type": "hackathon",
-    "keywords": []
+    "when": "Spring 2019",
+    "type": "academic",
+    "order": 15
+  },
+  "venmo": {
+    "title": "Venmo Network Analysis",
+    "image": "/images/projects/venmo.jpg",
+    "desc": "To gain familiarity with big data tools like spark, HBase, Hive, MapReduce, and others, I tackled this and other projects with fellow MSiA students. This project in particular uses some social network analysis and graph theory concepts to analyze Venmo transaction data.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Insights",
+    "link2": "",
+    "when": "Spring 2019",
+    "type": "academic",
+    "order": 14
+  },
+  "energyVis": {
+    "title": "Global Energy Visualizations",
+    "image": "/images/projects/energy.jpg",
+    "desc": "An experiment in visualization and data-driven storytelling, this project attempts to capture public interest around the use of energy across the world over the years. The site has been designed as an interactive experience that draws the user in with a compelling story, and then invites people to explore on their own with engaging visualization tools.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Demo",
+    "link2": "",
+    "when": "Winter 2018-19",
+    "type": "academic",
+    "order": 13
   },
   "eloKaggle": {
     "title": "Kaggle ELO Hack",
@@ -261,6 +129,138 @@
     "link2": "",
     "when": "Winter 2018-19",
     "type": "hackathon",
-    "keywords": []
+    "order": 12
+  },
+  "bcg": {
+    "title": "BCG Hackathon",
+    "image": "/images/projects/bcg.jpg",
+    "desc": "Another student and I analyzed some rich data on energy usage among a Spanish power company’s customer base. We built predictive models to forecast customer behavior and guide business decisions such as promotional offerings, customer segmentation, and variable pricing.",
+    "button": "Report",
+    "link": "",
+    "button2": "",
+    "link2": "",
+    "when": "Winter 2018-19",
+    "type": "hackathon",
+    "order": 11
+  },
+  "dsTools": {
+    "title": "Data Science Toolbox",
+    "image": "/images/projects/tools.jpg",
+    "desc": "This was conceived as a one-stop-shop for examples, references, and notes for future data science projects. The repository includes many snippets from past projects, toy examples borrowed from various tutorials, and some of my condensed notes from grad school.",
+    "button": "Repo",
+    "link": "",
+    "button2": "",
+    "link2": "",
+    "when": "Long-Running",
+    "type": "side",
+    "order": 10
+  },
+  "campsite": {
+    "title": "Campsite Finder",
+    "image": "/images/projects/campsite.jpg",
+    "desc": "Through a Hackathon at DePaul university, I worked with a couple strangers to help build an application that would connect users to available camping sites across the US. I setup most of the backend infrastructure and logic and built in a social component that allows users to save favorite campsites, share suggestions with others, and comment on their experiences.",
+    "button": "Repo",
+    "link": "",
+    "button2": "",
+    "link2": "",
+    "when": "Fall 2018",
+    "type": "hackathon",
+    "order": 9
+  },
+  "skills": {
+    "title": "Skills Based Demand",
+    "image": "/images/projects/skills.jpg",
+    "desc": "During one of my first projects in analytics I worked with several other students and Greenwich HR to quantify and forecast demand for jobs in the IT space based on associated skills. We ended up developing some novel approaches to measuring job demand and packaged all this in a slick user application to encourage exploration. Big thanks to classmate JD Cook for getting most of the dashboard put together.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Blog",
+    "link2": "",
+    "when": "Fall 2018",
+    "type": "academic",
+    "order": 8
+  },
+  "bookstore": {
+    "title": "Bookstore Offer Analysis",
+    "image": "/images/projects/books.jpg",
+    "desc": "A deep analysis of sales and advertising data from a German bookstore allowed for predictive modeling of customer behavior in response to future promotions. This analysis was performed with an ensemble of models produced in R to optimize short and long-term profit fo the bookstore.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Report",
+    "link2": "",
+    "when": "Fall 2018",
+    "type": "academic",
+    "order": 7
+  },
+  "rms": {
+    "title": "Roster Management System",
+    "image": "/images/projects/rms.jpg",
+    "desc": "Built a robust web application for roster management among student organizations. Users can be granted various privileges to manage rosters, update member information, and process updates in bulk via file upload. Note: this application was commissioned as contract work, but went unfinished due to loss of funding.",
+    "button": "Repo",
+    "link": "",
+    "button2": "",
+    "link2": "",
+    "when": "Summer 2018",
+    "type": "side",
+    "order": 6
+  },
+  "healthModel": {
+    "title": "User Health Model",
+    "image": "/images/projects/user.jpg",
+    "desc": "Sourced clickstream data and account information to build out user profiles for a SaaS company to monitor customer activity. Used these profiles to analyze and predict churn across the customer base and to inform CRM specialists on how to structure workshops, reach out to users, and prioritize visits.",
+    "button": "Read More",
+    "link": "",
+    "button2": "",
+    "link2": "",
+    "when": "Summer 2018",
+    "type": "work",
+    "order": 5
+  },
+  "sim-u": {
+    "title": "Sim-University",
+    "image": "/images/projects/simu.jpg",
+    "desc": "As part of my first Hackathon, I helped build out a Zoo-Tycoon-style game that gave the player the keys to a university which they would manage and develop. This was my first exposure to Python and I have to thank Daniel Schon for providing the idea and a lot of the code during this project and for helping bring me along.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Demo",
+    "link2": "",
+    "when": "Spring 2018",
+    "type": "hackathon",
+    "order": 4
+  },
+  "filtra": {
+    "title": "E-Commerce from Scratch",
+    "image": "/images/projects/filtra.jpg",
+    "desc": "Developed an e-commerce solution for a large filter manufacturer. This was my first exposure to web development and allowed me to learn to work with tools like MongoDB, Angular, Express, Node.js, and Stripe. I mainly worked on the backend for this application, but also built out the frontend for carts and the checkout process.",
+    "button": "Code",
+    "link": "",
+    "button2": "Demo",
+    "link2": "",
+    "when": "Spring 2018",
+    "type": "work",
+    "order": 3
+  },
+  "studyIt": {
+    "title": "StudyIt Mobile App",
+    "image": "/images/projects/study.jpg",
+    "desc": "To prepare for an internship opportunity, I dreamed up this side project (my first independent programming project). This React Native mobile app allowed a user to easily upload a spreadsheet of questions and answers and then quiz themselves over the material from their phone.",
+    "button": "Repo",
+    "link": "",
+    "button2": "Demo",
+    "link2": "",
+    "when": "Fall 2017",
+    "type": "side",
+    "order": 2
+  },
+  "crawlMapper": {
+    "title": "Crawl Mapper",
+    "image": "/images/projects/user.jpg",
+    "desc": "As part of a CS course in my undergrad, this project took data from sensors on crawling babies and turned the points into a dashboard that visualized the baby moving through space. The entire project is implemented in Java with a focus on structures and abstractions.",
+    "button": "Repo",
+    "link": "",
+    "button2": "",
+    "link2": "",
+    "when": "Spring 2017",
+    "type": "academic",
+    "order": 1
   }
 }
