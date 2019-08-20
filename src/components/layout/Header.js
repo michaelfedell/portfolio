@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 
+Header.propTypes = {
+  active: PropTypes.string.isRequired,
+  setActive: PropTypes.func.isRequired,
+  pages: PropTypes.arrayOf(PropTypes.string).isRequired,
+  links: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
 function Header(props) {
-  const {active, setActive} = props;
-  const pages = ["Home", "My Story", "Experience", "Projects", "Photos", "Curriculum Vitae"];
-  const links = ["/", "/bio", "/experience", "/projects", "/photos", "/cv"];
+  const {active, setActive, pages, links} = props;
 
   return (
     <div id="banner" className="text-center">
