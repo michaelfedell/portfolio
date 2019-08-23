@@ -1,16 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
 import {makeStyles} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
-import Collapse from "@material-ui/core/Collapse";
 import CardMedia from "@material-ui/core/CardMedia";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardActions from "@material-ui/core/CardActions";
-import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
+import {animated, useSpring} from "react-spring";
 
 ExperienceCard.propTypes = {
   company: PropTypes.string.isRequired,
@@ -24,21 +22,32 @@ ExperienceCard.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   card: {
-    // maxWidth: 345,
+    maxWidth: 345,
+  },
+  title: {
+    height: 100,
+    alignContent: "top",
+  },
+  body: {
+    position: "relative",
+    height: 250,
+  },
+  content: {
+    height: 250,
+    position: "absolute",
+    zIndex: 1,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   media: {
-    height: 0,
+    height: 250,
     paddingTop: '56.25%', // 16:9
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    // transform: 'rotate(180deg)',
+    position: 'absolute',
+    width: "100%",
+    zIndex: 2,
+    opacity: 0.75,
+    backgroundColor: "white",
   },
 }));
 
@@ -46,40 +55,49 @@ const useStyles = makeStyles(theme => ({
 function ExperienceCard(props) {
   const {company, title, location, startDate, endDate, image, short} = props;
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
 
-  function handleExpandClick() {
-    setExpanded(!expanded);
+  function hover() {
+    toggle(!shown);
   }
 
+  const [shown, toggle] = useState(true);
+  const spring = useSpring({marginLeft: shown ? 0 : 350});
+
+
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card}
+          onMouseEnter={hover}
+          onMouseLeave={hover}
+    >
       <CardHeader
+        className={classes.title}
         title={company}
         subheader={title}
       />
-      <CardMedia
-        className={classes.media}
-        image={image}
-        title={company}
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {short}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <Button
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          ...more
-        </Button>
-      </CardActions>
+      <div className={classes.body}>
+        <animated.div style={spring}>
+          <CardMedia
+            image={image}
+            title={company}
+            className={classes.media}
+          />
+        </animated.div>
+        <CardContent className={classes.content}>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {short}
+          </Typography>
+          <CardActions style={{justifyContent: "space-between"}}>
+            <Button
+              aria-label="show more"
+              style={{margin: "auto"}}
+              variant={"contained"}
+              color={"primary"}
+            >
+              ...more
+            </Button>
+          </CardActions>
+        </CardContent>
+      </div>
     </Card>
   );
 }

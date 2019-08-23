@@ -8,23 +8,27 @@ import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
 import Photos from "./components/Photos";
 import CV from "./components/CV";
+import {createMuiTheme} from "@material-ui/core";
+import { ThemeProvider } from '@material-ui/styles';
 
 
 const pages = ["Home", "My Story", "Experiences", "Projects", "Photos", "Curriculum Vitae"];
 const links = ["/", "/bio", "/experience", "/projects", "/photos", "/cv"];
 
+const theme = createMuiTheme({
+  palette: {
+    primary: { main: "#172252", },
+    secondary: { main: "#ecb937", },
+  },
+});
+
+
 function App() {
-  const [page, setPage] = React.useState("Home");
-
-
-  const setActive = (title) => {
-    setPage(title)
-  };
-
   return (
+    <ThemeProvider theme={theme}>
     <Router>
       <div className="App">
-        <Header active={page} setActive={setActive} pages={pages} links={links}/>
+        <Header pages={pages} links={links}/>
         <Route exact path={"/"} component={Home}/>
         <Route path={"/bio"} component={Bio}/>
         <Route path={"/experience"} component={Experiences}/>
@@ -33,6 +37,7 @@ function App() {
         <Route path={"/cv"} component={CV}/>
       </div>
     </Router>
+    </ThemeProvider>
   );
 }
 
