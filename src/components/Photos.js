@@ -1,11 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-Photos.propTypes = {
-  
-};
 
-function Photos(props) {
+function Photos() {
   return (
     <div>PHOTOS HERE</div>
   );

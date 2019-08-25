@@ -1,19 +1,20 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
 
-import EmailIcon from '@material-ui/icons/Email';
 import {Icon} from "@material-ui/core";
-import IconButton from "@material-ui/core/IconButton";
 import clsx from "clsx";
 import makeStyles from "@material-ui/styles/makeStyles";
 import Link from "@material-ui/core/Link";
-import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
+import cover from "../assets/images/coverphoto.jpg"
 
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "65%",
+    [theme.breakpoints.down('sm')]: {
+      width: "90%",
+    },
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-end',
@@ -62,14 +63,14 @@ function Home() {
           alignItems="center"
 
         >
-          <Grid sm={12} md={6} lg={4}>
+          <Grid item sm={12} md={6} lg={4}>
             <div className={classes.paper}>
               <div className="photobox">
-                <img className="img-fluid " src="images/coverphoto.jpg" alt="Michael Fedell"/>
+                <img className="img-fluid " src={cover} alt="Michael Fedell"/>
               </div>
             </div>
           </Grid>
-          <Grid sm={12} md={6} lg={8}>
+          <Grid item sm={12} md={6} lg={8}>
             <div className={classes.paper}>
               <div className="bio">
                 <Typography variant="body1">
@@ -89,7 +90,7 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-        <div id="social-lg" className="row px-5 mx-5 text-center">
+        <div id="social-lg" className="row text-center">
           <Grid
             container
             direction="row"
@@ -98,7 +99,7 @@ function Home() {
           >
             {links.map((l, i) => {
               return (
-                <Grid key={i} xs={12} sm={6} md={3}>
+                <Grid item key={i} sm={6} md={3}>
                   <Link target={"_blank"} href={l}>
                     <Icon className={clsx(classes.icon, icons[i])}/>
                   </Link>

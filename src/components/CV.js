@@ -1,11 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import {Container} from "@material-ui/core";
 import makeStyles from "@material-ui/styles/makeStyles";
-
-Cv.propTypes = {};
 
 
 const useStyles = makeStyles(theme => ({

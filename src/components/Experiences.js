@@ -1,11 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import myData from '../data/experience.json';
 import ExperienceCard from "./cards/ExperienceCard";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
 
-Experiences.propTypes = {};
 
 console.log(myData);
 

@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     position: 'absolute',
     width: "100%",
     zIndex: 2,
-    opacity: 0.85,
+    opacity: 1,
     backgroundColor: "white",
   },
 }));
@@ -92,12 +92,16 @@ function ExperienceCard(props) {
       <div className={classes.body}>
         <animated.div style={spring}>
           <CardMedia
-            image={image}
+            image={require(`../../assets${image}`)}
             title={company}
             className={classes.media}
+            onClick={mouseIn}
           />
         </animated.div>
-        <CardContent className={classes.content}>
+        <CardContent
+          className={classes.content}
+          onMouseLeave={mouseOut}
+        >
           <Typography variant="body2" color="textSecondary" component="p">
             {short}
           </Typography>

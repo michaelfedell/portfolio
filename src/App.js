@@ -43,21 +43,22 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <Switch>
-          <React.Fragment>
-            <div className="App">
-              <Header pages={pages} links={links}/>
+      <div className="App">
+        <Router basename={"/dev"}>
+        <Header pages={pages} links={links}/>
+          <Switch>
+            <React.Fragment>
               <Route exact path={"/"} component={Home}/>
               <Route path={"/bio"} component={Bio}/>
               <Route path={"/experience"} component={Experiences}/>
               <Route path={"/projects"} component={Projects}/>
               <Route path={"/photos"} component={Photos}/>
               <Route path={"/cv"} component={CV}/>
-            </div>
-          </React.Fragment>
-        </Switch>
-      </Router>
+              <Route />
+            </React.Fragment>
+          </Switch>
+        </Router>
+      </div>
     </ThemeProvider>
   );
 }

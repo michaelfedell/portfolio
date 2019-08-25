@@ -1,7 +1,6 @@
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   margin-bottom: 50px;
-  color: #222;
 }
 
 #banner {
@@ -69,15 +68,14 @@ a {
 }
 
 @media (max-width: 767px) {
-
+  button {
+    color: white;
+  }
   #banner {
     padding-top: 25px;
-    background-color: white;
-    color: #172252;
-    border: solid 5px #172252;
   }
   #banner a {
-    color: #172252;
+    color: white
   }
   .title {
     font-size: 38px;

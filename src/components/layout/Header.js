@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 Header.propTypes = {
@@ -15,11 +15,12 @@ function Header(props) {
     <div id="banner" className="text-center mb-3">
       <h1 className="title">S. Michael Fedell</h1>
       <nav className="navbar navbar-expand-md text-uppercase">
-        <button className="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarContent"
+        <button className="navbar-toggler mx-auto pt-0" type="button" data-toggle="collapse" data-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> – MENU –
         </button>
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="nav navbar-nav mx-auto">
+            <li className={"nav-item"}>[dev]</li>
             {pages.map((p, i) => (
               <li className={"nav-item"} key={links[i]}>
                 <NavLink exact={true} to={links[i]} activeClassName={"active"}>{p}</NavLink>
