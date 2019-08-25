@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function Experiences(props) {
+function Experiences() {
   const classes = useStyles();
 
   return (
@@ -30,19 +30,14 @@ function Experiences(props) {
               spacing={3}
               direction={"row"}
               justify={"center"}
-              alignItems={"top"}>
-          <Grid item xs={12} sm={6} md={4}>
-            <ExperienceCard {...myData.jplIntern}/>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <ExperienceCard {...myData.oseberg}/>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <ExperienceCard {...myData.iccew}/>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <ExperienceCard {...myData.cpChem}/>
-          </Grid>
+              alignItems={"flex-start"}>
+          {Object.keys(myData).map(exp => {
+            return (
+              <Grid item xs={12} md={6} lg={4} key={exp}>
+                <ExperienceCard {...myData[exp]}/>
+              </Grid>
+            )
+          })}
         </Grid>
       </div>
     </div>

@@ -9,6 +9,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import {animated, useSpring} from "react-spring";
+import ExperienceModal from "./ExperienceModal";
 
 ExperienceCard.propTypes = {
   company: PropTypes.string.isRequired,
@@ -23,6 +24,8 @@ ExperienceCard.propTypes = {
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    minWidth: 345,
+    margin: "auto",
   },
   title: {
     height: 100,
@@ -41,33 +44,45 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "space-between",
   },
   media: {
-    height: 250,
-    paddingTop: '56.25%', // 16:9
+    height: 260,
     position: 'absolute',
     width: "100%",
     zIndex: 2,
-    opacity: 0.75,
+    opacity: 0.85,
     backgroundColor: "white",
   },
 }));
 
 
 function ExperienceCard(props) {
-  const {company, title, location, startDate, endDate, image, short} = props;
+  const {company, title, image, short} = props;
   const classes = useStyles();
 
-  function hover() {
-    toggle(!shown);
+  // Hover on card animation
+  const [covered, toggle] = useState(true);
+  const spring = useSpring({marginLeft: covered ? 0 : 350});
+  function mouseOut() {
+    toggle(true);
+  }
+  function mouseIn() {
+    toggle(false);
   }
 
-  const [shown, toggle] = useState(true);
-  const spring = useSpring({marginLeft: shown ? 0 : 350});
+  // Detail dialog open
+  const [open, setOpen] = React.useState(false);
+  function handleClickOpen() {
+    setOpen(true);
+  }
+  function handleClose() {
+    setOpen(false);
+  }
+
 
 
   return (
     <Card className={classes.card}
-          onMouseEnter={hover}
-          onMouseLeave={hover}
+          onMouseEnter={mouseIn}
+          onMouseLeave={mouseOut}
     >
       <CardHeader
         className={classes.title}
@@ -92,9 +107,11 @@ function ExperienceCard(props) {
               style={{margin: "auto"}}
               variant={"contained"}
               color={"primary"}
+              onClick={handleClickOpen}
             >
               ...more
             </Button>
+            <ExperienceModal {...props} open={open} handleClose={handleClose}/>
           </CardActions>
         </CardContent>
       </div>
