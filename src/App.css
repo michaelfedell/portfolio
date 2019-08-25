@@ -26,17 +26,16 @@ body {
   font-size: 60px;
   font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
   text-transform: uppercase;
-
 }
 
-nav li {
+nav {
   font-family: 'Abhaya Libre', Georgia, 'Times New Roman', Times, serif;
 }
 
 
 @media (min-width: 768px) {
   nav li {
-    padding: 0px 20px 0 0;
+    padding: 0 20px 0 0;
   }
   nav li+li:before {
     content: "|";

@@ -83,6 +83,7 @@ function ExperienceCard(props) {
     <Card className={classes.card}
           onMouseEnter={mouseIn}
           onMouseLeave={mouseOut}
+          onClick={mouseIn}
     >
       <CardHeader
         className={classes.title}
@@ -95,7 +96,6 @@ function ExperienceCard(props) {
             image={require(`../../assets${image}`)}
             title={company}
             className={classes.media}
-            onClick={mouseIn}
           />
         </animated.div>
         <CardContent
@@ -113,7 +113,7 @@ function ExperienceCard(props) {
               color={"primary"}
               onClick={handleClickOpen}
             >
-              ...more
+              more
             </Button>
             <ExperienceModal {...props} open={open} handleClose={handleClose}/>
           </CardActions>

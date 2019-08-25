@@ -7,6 +7,7 @@ import makeStyles from "@material-ui/styles/makeStyles";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import cover from "../assets/images/coverphoto.jpg"
+import Tooltip from "@material-ui/core/Tooltip";
 
 
 const useStyles = makeStyles(theme => ({
@@ -48,6 +49,12 @@ const icons = [
   "fab fa-linkedin",
   "fab fa-github",
 ];
+const labels = [
+  "University Bio",
+  "Email Me",
+  "LinkedIn",
+  "GitHub",
+]
 
 
 function Home() {
@@ -99,9 +106,11 @@ function Home() {
           >
             {links.map((l, i) => {
               return (
-                <Grid item key={i} sm={6} md={3}>
+                <Grid item key={i} xs={6} md={3}>
                   <Link target={"_blank"} href={l}>
-                    <Icon className={clsx(classes.icon, icons[i])}/>
+                    <Tooltip title={labels[i]}>
+                      <Icon className={clsx(classes.icon, icons[i])}/>
+                    </Tooltip>
                   </Link>
                 </Grid>
               )
