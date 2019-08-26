@@ -3,6 +3,7 @@ import myData from '../data/experience.json';
 import ExperienceCard from "./cards/ExperienceCard";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
 
 
 console.log(myData);
@@ -22,23 +23,23 @@ function Experiences() {
   const classes = useStyles();
 
   return (
-    <div className="container">
+    <Container>
       <div className={classes.root}>
         <Grid container
               spacing={3}
               direction={"row"}
               justify={"center"}
-              alignItems={"flex-start"}>
+              alignItems={"stretch"}>
           {Object.keys(myData).map(exp => {
             return (
-              <Grid item xs={12} md={6} lg={4} key={exp}>
+              <Grid item xs key={exp}>
                 <ExperienceCard {...myData[exp]}/>
               </Grid>
             )
           })}
         </Grid>
       </div>
-    </div>
+    </Container>
   );
 }
 
