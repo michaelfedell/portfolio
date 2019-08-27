@@ -20,7 +20,6 @@ function Header(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="nav navbar-nav mx-auto">
-            <li className={"nav-item"}>[dev]</li>
             {pages.map((p, i) => (
               <li className={"nav-item"} key={links[i]}>
                 <NavLink exact={true} to={links[i]} activeClassName={"active"}>{p}</NavLink>

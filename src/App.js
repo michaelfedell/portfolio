@@ -44,7 +44,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Router basename={"/dev"}>
+        <Router basename={"/"}>
         <Header pages={pages} links={links}/>
           <Switch>
             <React.Fragment>
